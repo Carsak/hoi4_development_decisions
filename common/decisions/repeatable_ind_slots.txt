@@ -1,0 +1,410 @@
+infrastructure_decisions_category = {
+	
+	industry_toggle_on_decision = {
+		icon = generic_operation
+		visible  = {has_global_flag = industry_hide_decisions}
+		complete_effect = {clr_global_flag = industry_hide_decisions}
+	}
+
+	industry_toggle_off_decision = {
+		icon = generic_operation
+		visible  = {NOT = {has_global_flag = industry_hide_decisions}}
+		complete_effect = {set_global_flag = industry_hide_decisions}
+	}
+	
+	prospecting_toggle_on_decision = {
+		icon = generic_operation
+		visible  = {
+			NOT = {has_global_flag = industry_hide_decisions}
+			has_global_flag = prospecting_hide_decisions
+			}
+		complete_effect = {clr_global_flag = prospecting_hide_decisions}
+	}
+
+	prospecting_toggle_off_decision = {
+		icon = generic_operation
+		visible  = {
+			NOT = {has_global_flag = industry_hide_decisions}
+			NOT = {has_global_flag = prospecting_hide_decisions}
+		}
+		complete_effect = {set_global_flag = prospecting_hide_decisions}
+	}
+	factory_toggle_on_decision = {
+		icon = generic_operation
+		visible  = {
+			has_global_flag = factory_hide_decisions
+			NOT = {has_global_flag = industry_hide_decisions}
+		}
+		complete_effect = {clr_global_flag = factory_hide_decisions}
+	}
+
+	factory_toggle_off_decision = {
+		icon = generic_operation
+		visible  = {
+			NOT = {has_global_flag = factory_hide_decisions}
+			NOT = {has_global_flag = industry_hide_decisions}
+		}
+		complete_effect = {set_global_flag = factory_hide_decisions}
+	}
+		
+	extra_building_slot_1 = {
+
+		icon = generic_construction
+        target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}	
+
+        cost = 25
+        fire_only_once = no
+		state_target = yes
+		highlight_color_while_active = 1 
+		on_map_mode = map_only 
+        available = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { 
+					OR = {
+						has_state_category = wasteland
+						has_state_category = tiny_island
+					}
+				}
+				NOT = { has_state_flag = extra_building_slot_flag_1 }
+				infrastructure > 2      
+			}
+        }
+        visible = {
+			NOT = {has_global_flag = industry_hide_decisions}
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { 
+					OR = {
+						has_state_category = wasteland
+						has_state_category = tiny_island
+					}
+				}
+				NOT = { has_state_flag = extra_building_slot_flag_1 }
+				infrastructure > 2     
+			}	
+		}
+		
+        complete_effect = {
+				FROM = {
+					add_extra_state_shared_building_slots = 1
+					set_state_flag = extra_building_slot_flag_1
+				}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+				
+	extra_building_slot_2 = {
+
+		icon = generic_construction
+
+        target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}
+
+        cost = 25
+        fire_only_once = no
+		state_target = yes
+		highlight_color_while_active = 1 
+		on_map_mode = map_only 
+		
+        available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FROM = {
+				is_owned_by = ROOT
+				
+				has_state_flag = extra_building_slot_flag_1
+				NOT = { has_state_flag = extra_building_slot_flag_2 }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				infrastructure > 3   
+			}
+		
+        }
+
+        visible = {
+			NOT = {has_global_flag = industry_hide_decisions}
+			num_of_civilian_factories_available_for_projects > 5
+			FROM = {
+				is_owned_by = ROOT
+				
+				has_state_flag = extra_building_slot_flag_1
+				NOT = { has_state_flag = extra_building_slot_flag_2 }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				infrastructure > 3   
+			}
+		}
+		
+		days_remove = 30
+
+		modifier = {
+            consumer_goods_factor = 0.03
+		}
+
+        remove_effect = {
+			FROM = {			
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = extra_building_slot_flag_2
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	extra_building_slot_3 = {
+
+		icon = generic_construction
+
+		target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}
+
+        cost = 50
+        fire_only_once = no
+		state_target = yes
+		highlight_color_while_active = 1 
+		on_map_mode = map_only 
+		
+        available = {
+			num_of_civilian_factories_available_for_projects > 7
+			FROM = {
+				is_owned_by = ROOT
+				
+				has_state_flag = extra_building_slot_flag_2
+				NOT = { has_state_flag = extra_building_slot_flag_3 }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				infrastructure > 4   
+			}
+		
+        }
+
+        visible = {
+			NOT = {has_global_flag = industry_hide_decisions}
+			num_of_civilian_factories_available_for_projects > 7
+			FROM = {
+				is_owned_by = ROOT
+				
+				has_state_flag = extra_building_slot_flag_2
+				NOT = { has_state_flag = extra_building_slot_flag_3 }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				infrastructure > 4   
+			}
+		}
+		
+		days_remove = 60
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+        remove_effect = {
+			FROM = {			
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = extra_building_slot_flag_3
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	extra_building_slot_4 = {
+
+		icon = generic_construction
+
+        target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}
+        cost = 75
+        fire_only_once = no
+		state_target = yes
+		highlight_color_while_active = 1 
+		on_map_mode = map_only 
+		
+        available = {
+			num_of_civilian_factories_available_for_projects > 10
+			FROM = {
+				is_owned_by = ROOT
+				
+				has_state_flag = extra_building_slot_flag_3
+				NOT = { has_state_flag = extra_building_slot_flag_4 }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				infrastructure > 4   
+			}
+		
+        }
+
+        visible = {
+			NOT = {has_global_flag = industry_hide_decisions}
+			num_of_civilian_factories_available_for_projects > 10
+			FROM = {
+				is_owned_by = ROOT
+				
+				has_state_flag = extra_building_slot_flag_3
+				NOT = { has_state_flag = extra_building_slot_flag_4 }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				infrastructure > 4  
+			}
+		}
+		
+		days_remove = 60
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+
+        remove_effect = {
+			FROM = {			
+				add_extra_state_shared_building_slots = 2
+				set_state_flag = extra_building_slot_flag_4
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	
+	
+	
+#####STEEL MILLS#####
+steel_mills_tier_1 = {
+	
+	icon = steel
+	
+	target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}
+	fire_only_once = no
+	state_target = yes
+	highlight_color_while_active = 1 
+	on_map_mode = map_only 
+	cost = 25
+	days_remove = 60
+	
+	
+	available = {
+		has_tech = excavation1
+		num_of_civilian_factories_available_for_projects > 5
+		FROM = {
+			has_state_flag = extra_building_slot_flag_2
+			NOT = { has_state_flag = steel_mills_1 }
+			is_fully_controlled_by = ROOT
+			is_owned_by = ROOT
+		}
+	}
+
+	visible = {
+		NOT = {has_global_flag = industry_hide_decisions}
+		has_tech = excavation1
+		num_of_civilian_factories_available_for_projects > 5
+		FROM = {
+			has_state_flag = extra_building_slot_flag_2
+			NOT = { has_state_flag = steel_mills_1 }
+			is_fully_controlled_by = ROOT
+			is_owned_by = ROOT
+		}
+	}
+
+
+	modifier = {
+		consumer_goods_factor = 0.05
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+	
+	remove_effect = { 
+		FROM = {
+			add_resource = {
+				type = steel
+				amount = 6
+			}
+			set_state_flag = steel_mills_1
+		}
+	}
+}
+
+steel_mills_tier_2 = {
+	
+	icon = steel
+
+	
+	target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}
+	fire_only_once = no
+	state_target = yes
+	highlight_color_while_active = 1 
+	on_map_mode = map_only 
+	cost = 25
+	days_remove = 90
+	
+	available = {
+		has_tech = excavation3
+		num_of_civilian_factories_available_for_projects > 10
+		FROM = {
+			has_state_flag = steel_mills_1
+			NOT = { has_state_flag = steel_mills_2 }
+			is_fully_controlled_by = ROOT
+			is_owned_by = ROOT
+		}
+	}
+
+	visible = {
+		NOT = {has_global_flag = industry_hide_decisions}
+		has_tech = excavation3
+		num_of_civilian_factories_available_for_projects > 10
+		FROM = {
+			has_state_flag = steel_mills_1
+			NOT = { has_state_flag = steel_mills_2 }
+			is_fully_controlled_by = ROOT
+			is_owned_by = ROOT
+		}
+	}
+
+
+	modifier = {
+		consumer_goods_factor = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+	
+	remove_effect = { 
+		FROM = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+			set_state_flag = steel_mills_2
+		}
+	}
+}
+
+}

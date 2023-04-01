@@ -1,0 +1,218 @@
+technology_decisions_category = {
+	university_investment = {
+		icon = generic_research
+		target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}
+
+		cost = 100
+		days_remove = 120
+		fire_only_once = no
+		state_target = yes
+		highlight_color_while_active = 1 
+		on_map_mode = map_only 
+
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		visible = {
+			NOT = {has_global_flag = industry_hide_decisions}
+			NOT = {has_idea = university_10}
+			num_of_civilian_factories_available_for_projects > 8
+			FROM = {
+				has_state_flag = extra_building_slot_flag_3
+				OR = { 
+					has_state_category = metropolis
+					has_state_category = megalopolis 
+				} 
+				NOT = {has_state_flag = university_investment_1}
+				is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+		}
+		
+        available = {
+			num_of_civilian_factories_available_for_projects > 8
+			FROM = {
+				has_state_flag = extra_building_slot_flag_3
+				OR = { 
+					has_state_category = metropolis
+					has_state_category = megalopolis 
+				} 
+				NOT = {has_state_flag = university_investment_1}
+				is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+        }
+
+        remove_effect = {
+			FROM = {
+				set_state_flag = university_investment_1
+				
+			}
+			
+			IF = {
+				limit = { 
+					NOT = { 
+						OR = {
+								has_idea = university_1
+								has_idea = university_2
+								has_idea = university_3
+								has_idea = university_4
+								has_idea = university_5
+								has_idea = university_6
+								has_idea = university_7
+								has_idea = university_8
+								has_idea = university_9
+								has_idea = university_10
+							}
+						}
+				}
+				add_ideas = university_1
+			}
+			else_if  = {
+				limit = {
+					has_idea = university_1
+				}
+				swap_ideas = {
+					 remove_idea = university_1
+					 add_idea = university_2
+				}
+			}
+			else_if  = {
+				limit = {
+					has_idea = university_2
+				}
+				swap_ideas = {
+					 remove_idea = university_2
+					 add_idea = university_3
+				}
+			}
+			else_if  = {
+				limit = {
+					has_idea = university_3
+				}
+				swap_ideas = {
+					 remove_idea = university_3
+					 add_idea = university_4
+				}
+			}
+			else_if  = {
+				limit = {
+					has_idea = university_4
+				}
+				swap_ideas = {
+					 remove_idea = university_4
+					 add_idea = university_5
+				}
+			}
+			else_if  = {
+				limit = {
+					has_idea = university_5
+				}
+				swap_ideas = {
+					 remove_idea = university_5
+					 add_idea = university_6
+				}
+			}
+			else_if  = {
+				limit = {
+					has_idea = university_6
+				}
+				swap_ideas = {
+					 remove_idea = university_6
+					 add_idea = university_7
+				}
+			}
+			else_if  = {
+				limit = {
+					has_idea = university_7
+				}
+				swap_ideas = {
+					 remove_idea = university_7
+					 add_idea = university_8
+				}
+			}
+			else_if  = {
+				limit = {
+					has_idea = university_8
+				}
+				swap_ideas = {
+					 remove_idea = university_8
+					 add_idea = university_9
+				}
+			}
+			else_if  = {
+				limit = {
+					has_idea = university_9
+				}
+				swap_ideas = {
+					 remove_idea = university_9
+					 add_idea = university_10
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	university_research_slot = {
+
+		icon = generic_research
+		target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}
+
+		cost = 150
+		days_remove = 60
+		fire_only_once = yes
+		state_target = yes
+		highlight_color_while_active = 1 
+		on_map_mode = map_only
+		
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		
+        available = {
+			num_of_civilian_factories_available_for_projects > 15
+			NOT = {has_country_flag = university_investment_2}
+            FROM = {
+				has_state_flag = university_investment_1
+            	NOT = {has_country_flag = university_investment_2}
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT			
+            }
+        }
+
+        visible = {
+			num_of_civilian_factories_available_for_projects > 15
+			NOT = {has_global_flag = industry_hide_decisions}
+			NOT = {has_country_flag = university_investment_2}
+			FROM = {
+				has_state_flag = university_investment_1
+				NOT = {has_country_flag = university_investment_2}
+ 
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT			
+            }
+		}
+		complete_effect = {
+			set_country_flag = university_investment_2
+		}
+
+        remove_effect = {
+			add_research_slot = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+}

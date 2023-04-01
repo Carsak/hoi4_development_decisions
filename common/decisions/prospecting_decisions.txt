@@ -1,0 +1,277 @@
+prospecting_category = {
+
+
+prospecting_1 = {
+	
+	icon = aluminium
+	
+	target_trigger = {
+		FROM = { 
+			is_owned_by = ROOT
+		}
+	}
+	fire_only_once = no
+	state_target = yes
+	highlight_color_while_active = 1 
+	on_map_mode = map_only 
+	cost = 25
+	days_remove = 90
+	
+	
+	available = {
+		has_tech = excavation1
+		num_of_civilian_factories_available_for_projects > 5
+		FROM = {
+			#has_state_flag = extra_building_slot_flag_1
+			#NOT = { has_state_flag = prospecting_success_1 }
+			is_fully_controlled_by = ROOT
+			is_owned_by = ROOT
+		}
+	}
+
+	visible = {
+		NOT = {has_global_flag = industry_hide_decisions}
+		NOT = {has_global_flag = prospecting_hide_decisions}
+		has_tech = excavation1
+		num_of_civilian_factories_available_for_projects > 5
+		FROM = {
+			#has_state_flag = extra_building_slot_flag_1
+			#NOT = { has_state_flag = prospecting_success_1 }
+			is_fully_controlled_by = ROOT
+			is_owned_by = ROOT
+		}
+	}
+
+
+	modifier = {
+		consumer_goods_factor = 0.05
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+	
+	remove_effect = { 
+		description = prospecting_descision_desc
+		FROM = {set_state_flag = prospecting_target }
+		country_event = prospecting.0
+		hidden_effect = {
+			random_list = {
+				80 = { #base failure
+					modifier = {
+						factor = 1.2
+						FROM = { NOT = {has_state_flag = extra_building_slot_flag_1}}
+					}
+					modifier = {
+						factor = 1.05
+						FROM = { NOT = {has_state_flag = extra_building_slot_flag_2}}
+					}
+					modifier = {
+						factor = 1.1
+						FROM = {infrastructure < 3}
+					}
+					modifier = {
+						factor = 1.1
+						FROM = {infrastructure < 3}
+					}
+					modifier = {
+						factor = 1.2
+						FROM = {infrastructure < 2}
+					}
+					modifier = {
+						factor = 1.3
+						FROM = {infrastructure < 1}
+					}
+					
+					
+					country_event = prospecting.1
+				}
+				20 = { #base success
+					modifier = {
+						factor = 1.1
+						FROM = {infrastructure > 3}
+					}
+					modifier = {
+						factor = 1.1
+						FROM = {infrastructure > 3}
+					}
+					modifier = {
+						factor = 1.2
+						FROM = {infrastructure > 4}
+					}
+					modifier = {
+						factor = 1.3
+						FROM = {infrastructure > 4}
+					}
+					modifier = {
+						factor = 1.1
+						has_tech = excavation2
+					}
+					modifier = {
+						factor = 1.2
+						has_tech = excavation3
+					}
+					modifier = {
+						factor = 1.3
+						has_tech = excavation4
+					}
+					modifier = {
+						factor = 1.5
+						has_tech = excavation5
+					}
+					random_list = { ##Roll for size 
+						50 = {	##Small
+							modifier = {
+								factor = 1.0
+								has_tech = excavation1
+							}
+							modifier = {
+								factor = 0.9
+								has_tech = excavation2
+							}
+							modifier = {
+								factor = 0.8
+								has_tech = excavation3
+							}
+							modifier = {
+								factor = 0.6
+								has_tech = excavation4
+							}
+							modifier = {
+								factor = 0.5
+								has_tech = excavation5
+							}
+							random_list = { ##Roll for Type
+								30 = {
+									country_event = prospecting.11
+								}
+								30 = {
+									country_event = prospecting.12
+								}
+								10 = {
+									country_event = prospecting.13
+								}
+								10 = {
+									country_event = prospecting.14
+								}
+								20 = {
+									country_event = prospecting.15
+								}
+							}
+						}
+						30 = { 	##Medium
+							modifier = {
+								factor = 1.1
+								has_tech = excavation2
+							}
+							modifier = {
+								factor = 1.2
+								has_tech = excavation2
+							}
+							modifier = {
+								factor = 1.1
+								has_tech = excavation3
+							}
+							modifier = {
+								factor = 0.8
+								has_tech = excavation4
+							}
+							modifier = {
+								factor = 0.6
+								has_tech = excavation5
+							}
+							random_list = { ##Roll for Type
+								30 = {
+									country_event = prospecting.21
+								}
+								30 = {
+									country_event = prospecting.22
+								}
+								10 = {
+									country_event = prospecting.23
+								}
+								10 = {
+									country_event = prospecting.24
+								}
+								20 = {
+									country_event = prospecting.25
+								}
+							}
+						}
+						15 = {	##Large
+							modifier = {
+								factor = 1.1
+								has_tech = excavation2
+							}
+							modifier = {
+								factor = 1.3
+								has_tech = excavation3
+							}
+							modifier = {
+								factor = 2.0
+								has_tech = excavation4
+							}
+							modifier = {
+								factor = 1.8
+								has_tech = excavation5
+							}
+							random_list = { ##Roll for Type
+								30 = {
+									country_event = prospecting.31
+								}
+								30 = {
+									country_event = prospecting.32
+								}
+								10 = {
+									country_event = prospecting.33
+								}
+								10 = {
+									country_event = prospecting.34
+								}
+								20 = {
+									country_event = prospecting.35
+								}
+							}
+						}
+						5 = {	#Gigantic
+							modifier = {
+								factor = 1.5
+								has_tech = excavation3
+							}
+							modifier = {
+								factor = 2.0
+								has_tech = excavation4
+							}
+							modifier = {
+								factor = 3.0
+								has_tech = excavation5
+							}
+							random_list = { ##Roll for Type
+								30 = {
+									country_event = prospecting.41
+								}
+								30 = {
+									country_event = prospecting.42
+								}
+								10 = {
+									country_event = prospecting.43
+								}
+								10 = {
+									country_event = prospecting.44
+								}
+								20 = {
+									country_event = prospecting.45
+								}
+							}
+						}
+					
+					}	
+				}			
+		}
+	}
+}
+
+
+
+
+}

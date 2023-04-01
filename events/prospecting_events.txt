@@ -1,0 +1,453 @@
+add_namespace = prospecting
+
+
+country_event = { ##placeholder for description
+	id = prospecting.0
+	is_triggered_only = yes
+	hidden = yes
+}
+
+
+##prospecting failed
+country_event = {
+	id = prospecting.1
+	title = prospecting.1.t
+	desc = prospecting.1.d
+	
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	option = {
+		name = unfortunate
+		random_owned_state = {
+			limit = { has_state_flag = prospecting_target }
+			clr_state_flag = prospecting_target
+		}
+	}	
+}
+
+##small steel
+country_event = {
+	id = prospecting.11
+	title = prospecting.11.t
+	desc = prospecting.11.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit={has_state_flag = prospecting_target}
+
+			add_resource = {
+				type = steel
+				amount = 3
+			}
+			clr_state_flag = prospecting_target
+		}
+	}
+}
+##small aluminum
+country_event = {
+	id = prospecting.12
+	title = prospecting.12.t
+	desc = prospecting.12.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood		
+		random_owned_state = {
+			limit={has_state_flag = prospecting_target}			
+			add_resource = {
+				type = aluminium
+				amount = 3
+			}
+			clr_state_flag = prospecting_target
+		}
+	}
+}
+##small tungsten
+country_event = {
+	id = prospecting.13
+	title = prospecting.13.t
+	desc = prospecting.13.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target } 
+			
+			add_resource = {
+				type = tungsten
+				amount = 3
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+	
+}
+##small chromium
+country_event = {
+	id = prospecting.14
+	title = prospecting.14.t
+	desc = prospecting.14.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target }
+			
+			add_resource = {
+				type = chromium
+				amount = 3
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+	
+}
+##small oil
+country_event = {
+	id = prospecting.15
+	title = prospecting.15.t
+	desc = prospecting.15.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target }
+			
+			add_resource = {
+				type = oil
+				amount = 4
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+}
+
+###############MEDIUM DEPOSITS
+##medium steel
+country_event = {
+	id = prospecting.21
+	title = prospecting.21.t
+	desc = prospecting.21.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit={has_state_flag = prospecting_target}
+
+			add_resource = {
+				type = steel
+				amount = 5
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+}
+##medium aluminum
+country_event = {
+	id = prospecting.22
+	title = prospecting.22.t
+	desc = prospecting.22.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood		
+		random_owned_state = {
+			limit={has_state_flag = prospecting_target}			
+			add_resource = {
+				type = aluminium
+				amount = 5
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag =  prospecting_target
+		}
+	}
+}
+##medium tungsten
+country_event = {
+	id = prospecting.23
+	title = prospecting.23.t
+	desc = prospecting.23.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target } 
+			
+			add_resource = {
+				type = tungsten
+				amount = 5
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+	
+}
+##medium chromium
+country_event = {
+	id = prospecting.24
+	title = prospecting.24.t
+	desc = prospecting.24.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target }
+			
+			add_resource = {
+				type = chromium
+				amount = 5
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+	
+}
+##medium oil
+country_event = {
+	id = prospecting.25
+	title = prospecting.25.t
+	desc = prospecting.25.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target }
+			
+			add_resource = {
+				type = oil
+				amount = 8
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+}
+
+###############LARGE DEPOSITS
+##large steel
+country_event = {
+	id = prospecting.31
+	title = prospecting.31.t
+	desc = prospecting.31.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit={has_state_flag = prospecting_target}
+
+			add_resource = {
+				type = steel
+				amount = 12
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+}
+##large aluminum
+country_event = {
+	id = prospecting.32
+	title = prospecting.32.t
+	desc = prospecting.32.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood		
+		random_owned_state = {
+			limit={has_state_flag = prospecting_target}			
+			add_resource = {
+				type = aluminium
+				amount = 12
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+}
+##large tungsten
+country_event = {
+	id = prospecting.33
+	title = prospecting.33.t
+	desc = prospecting.33.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target } 
+			
+			add_resource = {
+				type = tungsten
+				amount = 9
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+	
+}
+##large chromium
+country_event = {
+	id = prospecting.34
+	title = prospecting.34.t
+	desc = prospecting.34.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target }
+			
+			add_resource = {
+				type = chromium
+				amount = 9
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+	
+}
+##large oil
+country_event = {
+	id = prospecting.35
+	title = prospecting.35.t
+	desc = prospecting.35.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target }
+			
+			add_resource = {
+				type = oil
+				amount = 12
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+}
+
+###############HUGE DEPOSITS
+##huge steel
+country_event = {
+	id = prospecting.41
+	title = prospecting.41.t
+	desc = prospecting.41.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit={has_state_flag = prospecting_target}
+
+			add_resource = {
+				type = steel
+				amount = 16
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+}
+##huge aluminum
+country_event = {
+	id = prospecting.42
+	title = prospecting.42.t
+	desc = prospecting.42.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood		
+		random_owned_state = {
+			limit={has_state_flag = prospecting_target}			
+			add_resource = {
+				type = aluminium
+				amount = 16
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+}
+##huge tungsten
+country_event = {
+	id = prospecting.43
+	title = prospecting.43.t
+	desc = prospecting.43.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target } 
+			
+			add_resource = {
+				type = tungsten
+				amount = 12
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+	
+}
+##huge chromium
+country_event = {
+	id = prospecting.44
+	title = prospecting.44.t
+	desc = prospecting.44.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target }
+			
+			add_resource = {
+				type = chromium
+				amount = 12
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+	
+}
+##huge oil
+country_event = {
+	id = prospecting.45
+	title = prospecting.45.t
+	desc = prospecting.45.d
+	is_triggered_only = yes
+	option = { 
+		name = Understood
+		
+		random_owned_state = {
+			limit = {has_state_flag = prospecting_target }
+			
+			add_resource = {
+				type = oil
+				amount = 16
+			}
+			set_state_flag = prospecting_success_1
+			clr_state_flag = prospecting_target
+		}
+	}
+}

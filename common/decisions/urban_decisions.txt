@@ -1,0 +1,229 @@
+urban_decisions_category = {
+
+	urban_upgrade_decision_1 = {
+		icon = generic_operation
+		target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}
+
+		cost = 100
+		days_remove = 60
+		fire_only_once = no
+		state_target = yes
+		highlight_color_while_active = 1 
+		on_map_mode = map_only 
+
+		
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		visible = {
+			NOT = {has_global_flag = industry_hide_decisions}
+			num_of_civilian_factories_available_for_projects > 10
+			FROM = {
+				has_state_flag = extra_building_slot_flag_3
+				OR = {
+					has_state_category = enclave 
+					has_state_category = pastoral 
+					has_state_category = rural
+					has_state_category = town
+					
+				}
+				is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+		}
+		
+        available = {
+			num_of_civilian_factories_available_for_projects > 10
+            FROM = {
+				has_state_flag = extra_building_slot_flag_3
+				OR = {
+					has_state_category = enclave 
+					has_state_category = pastoral 
+					has_state_category = rural
+					has_state_category = town
+					
+				}
+				is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+        }
+
+        remove_effect = {
+			FROM = {
+				set_state_flag = urban_upgrade_flag_1
+				set_state_category = large_town
+				
+			}
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	urban_upgrade_decision_2 = {
+		icon = generic_operation
+		target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}
+
+		cost = 100
+		days_remove = 75
+		fire_only_once = no
+		state_target = yes
+		highlight_color_while_active = 1 
+		on_map_mode = map_only 
+
+
+		modifier = {
+			consumer_goods_factor = 0.15
+		}
+		visible = {
+			NOT = {has_global_flag = industry_hide_decisions}
+			num_of_civilian_factories_available_for_projects > 15
+			FROM = {
+				has_state_flag = extra_building_slot_flag_3
+				OR = {
+					has_state_category = large_town 
+					has_state_category = city
+				}
+				is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+		}
+		
+        available = {
+			num_of_civilian_factories_available_for_projects > 15
+            FROM = {
+				has_state_flag = extra_building_slot_flag_3
+				OR = {
+					has_state_category = large_town 
+					has_state_category = city
+				}
+				is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+			
+        }
+
+        remove_effect = {
+			FROM = {			
+				set_state_flag = urban_upgrade_flag_2
+				set_state_category = large_city
+			}		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	urban_upgrade_decision_3 = {
+		icon = generic_operation
+		target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}
+
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		state_target = yes
+		highlight_color_while_active = 1 
+		on_map_mode = map_only 
+
+		modifier = {
+			consumer_goods_factor = 0.22
+		}
+		visible = {
+			NOT = {has_global_flag = industry_hide_decisions}
+			num_of_civilian_factories_available_for_projects > 25
+			FROM = {
+				has_state_flag = extra_building_slot_flag_3
+				has_state_category = large_city 
+				is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+		}
+		
+        available = {
+			num_of_civilian_factories_available_for_projects > 25
+            FROM = {
+				has_state_flag = extra_building_slot_flag_3
+				has_state_category = large_city 
+				is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+			
+        }
+
+        remove_effect = {
+			FROM = {
+				set_state_flag = urban_upgrade_flag_3
+				set_state_category = metropolis
+			}
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	urban_upgrade_decision_4 = {
+		icon = generic_operation
+		target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+			}
+		}
+
+		cost = 150
+		days_remove = 90
+		fire_only_once = no
+		state_target = yes
+		highlight_color_while_active = 1 
+		on_map_mode = map_only 
+
+		modifier = {
+			consumer_goods_factor = 0.3
+		}
+		visible = {
+			NOT = {has_global_flag = industry_hide_decisions}
+			num_of_civilian_factories_available_for_projects > 25
+			FROM = {
+				has_state_flag = extra_building_slot_flag_3
+				has_state_category = metropolis 
+				is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+		}
+		
+        available = {
+			num_of_civilian_factories_available_for_projects > 25
+            FROM = {
+				has_state_flag = extra_building_slot_flag_3
+				has_state_category = metropolis 
+				is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+			
+        }
+
+        remove_effect = {
+			FROM = {
+				set_state_flag = urban_upgrade_flag_4
+				set_state_category = megalopolis
+			}
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+}

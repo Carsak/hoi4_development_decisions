@@ -1,0 +1,15 @@
+infrastructure_decisions_category = {
+	icon = generic_economy
+}
+urban_decisions_category = {
+	icon = generic_economy
+}
+factory_decisions_category = {
+	icon = generic_economy
+}
+technology_decisions_category = {
+	icon = generic_science
+}
+prospecting_category = {
+	icon = generic_economy
+}

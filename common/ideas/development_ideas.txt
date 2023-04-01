@@ -1,0 +1,66 @@
+ideas = {
+
+	country = {
+		university_1 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
+		university_2 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.04
+			}
+		}
+		university_3 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.06
+			}
+		}
+		university_4 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.08
+			}
+		}
+		university_5 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		university_6 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.12
+			}
+		}
+		university_7 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.14
+			}
+		}
+		university_8 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.16
+			}
+		}
+		university_9 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.18
+			}
+		}
+		university_10 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+	}
+	
+}

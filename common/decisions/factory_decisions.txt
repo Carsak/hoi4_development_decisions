@@ -15,26 +15,26 @@ factory_slots_1 = {
 	on_map_mode = map_only 
 	
 	available = {
-		has_tech = construction1
-		num_of_civilian_factories_available_for_projects > 5
+		num_of_civilian_factories_available_for_projects > 3
 		FROM = {
             	has_state_flag = extra_building_slot_flag_1
 				NOT = { has_state_flag = factory_slots_1 }
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT
+                infrastructure > 0
             }
 	}
 
 	visible = {
 		NOT = {has_global_flag = industry_hide_decisions}
 		NOT = {has_global_flag = factory_hide_decisions}
-		has_tech = construction1
-		num_of_civilian_factories_available_for_projects > 5
+		num_of_civilian_factories_available_for_projects > 3
 		FROM = {
 			has_state_flag = extra_building_slot_flag_1
 			NOT = { has_state_flag = factory_slots_1 }
 			is_fully_controlled_by = ROOT
 			is_owned_by = ROOT
+            infrastructure > 0
 		}
 	}
 
@@ -73,7 +73,6 @@ factory_slots_2 = {
 	highlight_color_while_active = 1 
 	on_map_mode = map_only 
 	available = {
-		has_tech = construction2
 		num_of_civilian_factories_available_for_projects > 5
 		FROM = {
             	has_state_flag = extra_building_slot_flag_2
@@ -81,13 +80,13 @@ factory_slots_2 = {
 				NOT = { has_state_flag = factory_slots_2 }
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT
+                infrastructure > 1
             }
 	}
 
 	visible = {
 		NOT = {has_global_flag = industry_hide_decisions}
 		NOT = {has_global_flag = factory_hide_decisions}
-		has_tech = construction2
 		num_of_civilian_factories_available_for_projects > 5
 		FROM = {
 			has_state_flag = extra_building_slot_flag_2
@@ -95,6 +94,7 @@ factory_slots_2 = {
 			NOT = { has_state_flag = factory_slots_2 }
 			is_fully_controlled_by = ROOT
 			is_owned_by = ROOT
+            infrastructure > 1
 		}
 	}
 
@@ -141,8 +141,7 @@ factory_slots_3 = {
 	on_map_mode = map_only 
 	
 	available = {
-		has_tech = construction3
-		num_of_civilian_factories_available_for_projects > 10
+		num_of_civilian_factories_available_for_projects > 7
 		FROM = {
             	has_state_flag = extra_building_slot_flag_3
 				has_state_flag = factory_slots_2
@@ -155,14 +154,14 @@ factory_slots_3 = {
 	visible = {
 		NOT = {has_global_flag = industry_hide_decisions}
 		NOT = {has_global_flag = factory_hide_decisions}
-		has_tech = construction3
-		num_of_civilian_factories_available_for_projects > 10
+		num_of_civilian_factories_available_for_projects > 7
 		FROM = {
 			has_state_flag = extra_building_slot_flag_3
 			has_state_flag = factory_slots_2
 			NOT = { has_state_flag = factory_slots_3 }
 			is_fully_controlled_by = ROOT
 			is_owned_by = ROOT
+            infrastructure > 2
 		}
 	}
 
@@ -210,22 +209,21 @@ factory_slots_4 = {
 	
 
 	available = {
-		has_tech = construction4
-		num_of_civilian_factories_available_for_projects > 10
+		num_of_civilian_factories_available_for_projects > 7
 		FROM = {
             	has_state_flag = extra_building_slot_flag_4
 				has_state_flag = factory_slots_3
 				NOT = { has_state_flag = factory_slots_4 }
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT
+                infrastructure > 4
             }
 	}
 
 	visible = {
 		NOT = {has_global_flag = industry_hide_decisions}
 		NOT = {has_global_flag = factory_hide_decisions}
-		has_tech = construction4
-		num_of_civilian_factories_available_for_projects > 10
+		num_of_civilian_factories_available_for_projects > 7
 		FROM = {
 			has_state_flag = extra_building_slot_flag_4
 			has_state_flag = factory_slots_3

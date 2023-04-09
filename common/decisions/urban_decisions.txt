@@ -17,13 +17,13 @@ urban_decisions_category = {
 
 		
 		modifier = {
-			consumer_goods_factor = 0.1
+			consumer_goods_factor = 0.2
 		}
 		visible = {
 			NOT = {has_global_flag = industry_hide_decisions}
 			num_of_civilian_factories_available_for_projects > 10
 			FROM = {
-				has_state_flag = extra_building_slot_flag_3
+				has_state_flag = extra_building_slot_flag_2
 				OR = {
 					has_state_category = enclave 
 					has_state_category = pastoral 
@@ -39,7 +39,7 @@ urban_decisions_category = {
         available = {
 			num_of_civilian_factories_available_for_projects > 10
             FROM = {
-				has_state_flag = extra_building_slot_flag_3
+				has_state_flag = extra_building_slot_flag_2
 				OR = {
 					has_state_category = enclave 
 					has_state_category = pastoral 
@@ -82,7 +82,7 @@ urban_decisions_category = {
 
 
 		modifier = {
-			consumer_goods_factor = 0.15
+			consumer_goods_factor = 0.2
 		}
 		visible = {
 			NOT = {has_global_flag = industry_hide_decisions}
@@ -197,7 +197,7 @@ urban_decisions_category = {
 			NOT = {has_global_flag = industry_hide_decisions}
 			num_of_civilian_factories_available_for_projects > 25
 			FROM = {
-				has_state_flag = extra_building_slot_flag_3
+				has_state_flag = extra_building_slot_flag_4
 				has_state_category = metropolis 
 				is_fully_controlled_by = ROOT
             	is_owned_by = ROOT
@@ -207,7 +207,7 @@ urban_decisions_category = {
         available = {
 			num_of_civilian_factories_available_for_projects > 25
             FROM = {
-				has_state_flag = extra_building_slot_flag_3
+				has_state_flag = extra_building_slot_flag_4
 				has_state_category = metropolis 
 				is_fully_controlled_by = ROOT
             	is_owned_by = ROOT

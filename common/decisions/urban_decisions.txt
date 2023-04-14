@@ -21,7 +21,7 @@ urban_decisions_category = {
 		}
 		visible = {
 			NOT = {has_global_flag = industry_hide_decisions}
-			num_of_civilian_factories_available_for_projects > 10
+			num_of_civilian_factories > 20
 			FROM = {
 				has_state_flag = extra_building_slot_flag_2
 				OR = {
@@ -37,7 +37,7 @@ urban_decisions_category = {
 		}
 		
         available = {
-			num_of_civilian_factories_available_for_projects > 10
+			num_of_civilian_factories > 20
             FROM = {
 				has_state_flag = extra_building_slot_flag_2
 				OR = {
@@ -82,11 +82,11 @@ urban_decisions_category = {
 
 
 		modifier = {
-			consumer_goods_factor = 0.2
+			consumer_goods_factor = 0.3
 		}
 		visible = {
 			NOT = {has_global_flag = industry_hide_decisions}
-			num_of_civilian_factories_available_for_projects > 15
+			num_of_civilian_factories > 25
 			FROM = {
 				has_state_flag = extra_building_slot_flag_3
 				OR = {
@@ -99,7 +99,7 @@ urban_decisions_category = {
 		}
 		
         available = {
-			num_of_civilian_factories_available_for_projects > 15
+			num_of_civilian_factories > 25
             FROM = {
 				has_state_flag = extra_building_slot_flag_3
 				OR = {
@@ -139,11 +139,13 @@ urban_decisions_category = {
 		on_map_mode = map_only 
 
 		modifier = {
-			consumer_goods_factor = 0.22
+			consumer_goods_factor = 0.4
 		}
 		visible = {
 			NOT = {has_global_flag = industry_hide_decisions}
-			num_of_civilian_factories_available_for_projects > 25
+            
+			num_of_civilian_factories > 35
+            
 			FROM = {
 				has_state_flag = extra_building_slot_flag_3
 				has_state_category = large_city 
@@ -153,7 +155,8 @@ urban_decisions_category = {
 		}
 		
         available = {
-			num_of_civilian_factories_available_for_projects > 25
+			num_of_civilian_factories > 35
+            
             FROM = {
 				has_state_flag = extra_building_slot_flag_3
 				has_state_category = large_city 
@@ -191,11 +194,12 @@ urban_decisions_category = {
 		on_map_mode = map_only 
 
 		modifier = {
-			consumer_goods_factor = 0.3
+			consumer_goods_factor = 0.5
 		}
 		visible = {
 			NOT = {has_global_flag = industry_hide_decisions}
-			num_of_civilian_factories_available_for_projects > 25
+			num_of_civilian_factories > 45
+            
 			FROM = {
 				has_state_flag = extra_building_slot_flag_4
 				has_state_category = metropolis 
@@ -205,7 +209,8 @@ urban_decisions_category = {
 		}
 		
         available = {
-			num_of_civilian_factories_available_for_projects > 25
+			num_of_civilian_factories > 45
+            
             FROM = {
 				has_state_flag = extra_building_slot_flag_4
 				has_state_category = metropolis 

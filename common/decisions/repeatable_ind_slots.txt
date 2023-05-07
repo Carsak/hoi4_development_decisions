@@ -118,7 +118,7 @@ infrastructure_decisions_category = {
 		on_map_mode = map_only 
 		
         available = {
-			num_of_civilian_factories_available_for_projects > 5
+			num_of_civilian_factories_available_for_projects > 1
 			FROM = {
 				is_owned_by = ROOT
 				
@@ -133,7 +133,7 @@ infrastructure_decisions_category = {
 
         visible = {
 			NOT = {has_global_flag = industry_hide_decisions}
-			num_of_civilian_factories_available_for_projects > 5
+			num_of_civilian_factories_available_for_projects > 1
 			FROM = {
 				is_owned_by = ROOT
 				
@@ -179,7 +179,7 @@ infrastructure_decisions_category = {
 		on_map_mode = map_only 
 		
         available = {
-			num_of_civilian_factories_available_for_projects > 7
+			num_of_civilian_factories_available_for_projects > 1
 			FROM = {
 				is_owned_by = ROOT
 				
@@ -194,7 +194,7 @@ infrastructure_decisions_category = {
 
         visible = {
 			NOT = {has_global_flag = industry_hide_decisions}
-			num_of_civilian_factories_available_for_projects > 7
+			num_of_civilian_factories_available_for_projects > 1
 			FROM = {
 				is_owned_by = ROOT
 				
@@ -239,7 +239,7 @@ infrastructure_decisions_category = {
 		on_map_mode = map_only 
 		
         available = {
-			num_of_civilian_factories_available_for_projects > 10
+			num_of_civilian_factories_available_for_projects > 1
 			FROM = {
 				is_owned_by = ROOT
 				
@@ -254,7 +254,7 @@ infrastructure_decisions_category = {
 
         visible = {
 			NOT = {has_global_flag = industry_hide_decisions}
-			num_of_civilian_factories_available_for_projects > 10
+			num_of_civilian_factories_available_for_projects > 1
 			FROM = {
 				is_owned_by = ROOT
 				
@@ -306,7 +306,7 @@ steel_mills_tier_1 = {
 	
 	available = {
 		has_tech = excavation1
-		num_of_civilian_factories_available_for_projects > 5
+		num_of_civilian_factories_available_for_projects > 1
 		FROM = {
 			has_state_flag = extra_building_slot_flag_2
 			NOT = { has_state_flag = steel_mills_1 }
@@ -318,7 +318,7 @@ steel_mills_tier_1 = {
 	visible = {
 		NOT = {has_global_flag = industry_hide_decisions}
 		has_tech = excavation1
-		num_of_civilian_factories_available_for_projects > 5
+		num_of_civilian_factories_available_for_projects > 1
 		FROM = {
 			has_state_flag = extra_building_slot_flag_2
 			NOT = { has_state_flag = steel_mills_1 }
@@ -366,7 +366,7 @@ steel_mills_tier_2 = {
 	
 	available = {
 		has_tech = excavation3
-		num_of_civilian_factories_available_for_projects > 10
+		num_of_civilian_factories_available_for_projects > 1
 		FROM = {
 			has_state_flag = steel_mills_1
 			NOT = { has_state_flag = steel_mills_2 }
@@ -378,7 +378,7 @@ steel_mills_tier_2 = {
 	visible = {
 		NOT = {has_global_flag = industry_hide_decisions}
 		has_tech = excavation3
-		num_of_civilian_factories_available_for_projects > 10
+		num_of_civilian_factories_available_for_projects > 1
 		FROM = {
 			has_state_flag = steel_mills_1
 			NOT = { has_state_flag = steel_mills_2 }

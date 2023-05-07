@@ -41,7 +41,7 @@ factory_slots_1 = {
 	}
 
 	modifier = {
-		consumer_goods_factor = 0.1
+		consumer_goods_factor = 0.07
 	}
 	
 	ai_will_do = {
@@ -103,7 +103,7 @@ factory_slots_2 = {
 	}
 
 	modifier = {
-		consumer_goods_factor = 0.2
+		consumer_goods_factor = 0.10
 	}
 
 	ai_will_do = {
@@ -173,7 +173,7 @@ factory_slots_3 = {
 	}
 
 	modifier = {
-        consumer_goods_factor = 0.3
+        consumer_goods_factor = 0.15
 	}
 
 	ai_will_do = {
@@ -246,7 +246,7 @@ factory_slots_4 = {
 	fire_only_once = no
 
 	modifier = {
-		consumer_goods_factor = 0.4
+		consumer_goods_factor = 0.2
 	}
 
 	ai_will_do = {

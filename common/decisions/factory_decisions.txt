@@ -16,7 +16,7 @@ factory_slots_1 = {
 	
 	available = {
         num_of_civilian_factories > 6
-		num_of_civilian_factories_available_for_projects > 1
+		num_of_civilian_factories_available_for_projects > 0
         
 		FROM = {
             	has_state_flag = extra_building_slot_flag_1
@@ -76,7 +76,7 @@ factory_slots_2 = {
 	on_map_mode = map_only 
 	available = {
 		num_of_civilian_factories > 11
-		num_of_civilian_factories_available_for_projects > 1
+		num_of_civilian_factories_available_for_projects > 0
         
 		FROM = {
             	has_state_flag = extra_building_slot_flag_2
@@ -146,7 +146,7 @@ factory_slots_3 = {
 	
 	available = {
 		num_of_civilian_factories > 16
-		num_of_civilian_factories_available_for_projects > 1
+		num_of_civilian_factories_available_for_projects > 0
         
 		FROM = {
             	has_state_flag = extra_building_slot_flag_3
@@ -217,7 +217,7 @@ factory_slots_4 = {
 
 	available = {
 		num_of_civilian_factories > 21
-		num_of_civilian_factories_available_for_projects > 1
+		num_of_civilian_factories_available_for_projects > 0
         
 		FROM = {
             	has_state_flag = extra_building_slot_flag_4

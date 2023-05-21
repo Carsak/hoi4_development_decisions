@@ -300,7 +300,7 @@ steel_mills_tier_1 = {
 	state_target = yes
 	highlight_color_while_active = 1 
 	on_map_mode = map_only 
-	cost = 25
+	cost = 50
 	days_remove = 60
 	
 	
@@ -361,7 +361,7 @@ steel_mills_tier_2 = {
 	state_target = yes
 	highlight_color_while_active = 1 
 	on_map_mode = map_only 
-	cost = 25
+	cost = 75
 	days_remove = 90
 	
 	available = {

@@ -15,8 +15,8 @@ factory_slots_1 = {
 	on_map_mode = map_only 
 	
 	available = {
-        num_of_civilian_factories > 7
-		num_of_civilian_factories_available_for_projects > 1
+        num_of_civilian_factories > 6
+		num_of_civilian_factories_available_for_projects > 0
         
 		FROM = {
             	has_state_flag = extra_building_slot_flag_1
@@ -30,7 +30,7 @@ factory_slots_1 = {
 		NOT = {has_global_flag = industry_hide_decisions}
 		NOT = {has_global_flag = factory_hide_decisions}
         
-		num_of_civilian_factories > 7
+		num_of_civilian_factories > 6
         
 		FROM = {
 			has_state_flag = extra_building_slot_flag_1
@@ -75,8 +75,8 @@ factory_slots_2 = {
 	highlight_color_while_active = 1 
 	on_map_mode = map_only 
 	available = {
-		num_of_civilian_factories > 12
-		num_of_civilian_factories_available_for_projects > 1
+		num_of_civilian_factories > 11
+		num_of_civilian_factories_available_for_projects > 0
         
 		FROM = {
             	has_state_flag = extra_building_slot_flag_2
@@ -91,7 +91,7 @@ factory_slots_2 = {
 		NOT = {has_global_flag = industry_hide_decisions}
 		NOT = {has_global_flag = factory_hide_decisions}
         
-		num_of_civilian_factories > 12
+		num_of_civilian_factories > 11
         
 		FROM = {
 			has_state_flag = extra_building_slot_flag_2
@@ -145,8 +145,8 @@ factory_slots_3 = {
 	on_map_mode = map_only 
 	
 	available = {
-		num_of_civilian_factories > 17
-		num_of_civilian_factories_available_for_projects > 1
+		num_of_civilian_factories > 16
+		num_of_civilian_factories_available_for_projects > 0
         
 		FROM = {
             	has_state_flag = extra_building_slot_flag_3
@@ -161,7 +161,7 @@ factory_slots_3 = {
 		NOT = {has_global_flag = industry_hide_decisions}
 		NOT = {has_global_flag = factory_hide_decisions}
         
-		num_of_civilian_factories > 17
+		num_of_civilian_factories > 16
         
 		FROM = {
 			has_state_flag = extra_building_slot_flag_3
@@ -173,7 +173,7 @@ factory_slots_3 = {
 	}
 
 	modifier = {
-        consumer_goods_factor = 0.15
+        consumer_goods_factor = 0.12
 	}
 
 	ai_will_do = {
@@ -216,8 +216,8 @@ factory_slots_4 = {
 	
 
 	available = {
-		num_of_civilian_factories > 22
-		num_of_civilian_factories_available_for_projects > 1
+		num_of_civilian_factories > 21
+		num_of_civilian_factories_available_for_projects > 0
         
 		FROM = {
             	has_state_flag = extra_building_slot_flag_4
@@ -232,7 +232,7 @@ factory_slots_4 = {
 		NOT = {has_global_flag = industry_hide_decisions}
 		NOT = {has_global_flag = factory_hide_decisions}
         
-		num_of_civilian_factories > 22
+		num_of_civilian_factories > 21
         
 		FROM = {
 			has_state_flag = extra_building_slot_flag_4
@@ -246,7 +246,7 @@ factory_slots_4 = {
 	fire_only_once = no
 
 	modifier = {
-		consumer_goods_factor = 0.2
+		consumer_goods_factor = 0.15
 	}
 
 	ai_will_do = {

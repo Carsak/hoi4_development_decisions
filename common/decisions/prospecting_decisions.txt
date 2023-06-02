@@ -56,7 +56,6 @@ prospecting_1 = {
 	}
 	
 	remove_effect = { 
-		description = prospecting_descision_desc
 		FROM = {set_state_flag = prospecting_target }
 		country_event = prospecting.0
 		hidden_effect = {

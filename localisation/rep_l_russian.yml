@@ -15,7 +15,7 @@
  steel_mills_2:0 "Steel Industry developed to level 2"
  
  urban_decisions_category:0 "Urban Development"
- infrastructure_decisions_category_desc:0 "With our expanded infrastructure we can further urbanize the region, providing additional base building slots"
+ urban_decisions_category_desc:0 "With our expanded infrastructure we can further urbanize the region, providing additional base building slots"
  urban_upgrade_decision_1:0 "Urbanization 1"
  urban_upgrade_decision_2:0 "Urbanization 2"
  urban_upgrade_decision_3:0 "Urbanization 3"

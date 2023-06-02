@@ -97,7 +97,13 @@ infrastructure_decisions_category = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 10
+			
+			modifier = {
+				NOT = {tag = JAP}
+				is_major = yes
+				factor = 0
+			}
 		}
     }
 				
@@ -158,7 +164,13 @@ infrastructure_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
+			
+			modifier = {
+				NOT = {tag = JAP}
+				is_major = yes
+				factor = 0
+			}
 		}
     }
 	
@@ -219,7 +231,13 @@ infrastructure_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
+			
+			modifier = {
+				NOT = {tag = JAP}
+				is_major = yes
+				factor = 0
+			}
 		}
     }
 	
@@ -279,7 +297,13 @@ infrastructure_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
+			
+			modifier = {
+				NOT = {tag = JAP}
+				is_major = yes
+				factor = 0
+			}
 		}
     }
 	
@@ -333,7 +357,13 @@ steel_mills_tier_1 = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 10
+			
+			modifier = {
+				NOT = {tag = JAP}
+				is_major = yes
+				factor = 0
+			}
 	}
 	
 	remove_effect = { 

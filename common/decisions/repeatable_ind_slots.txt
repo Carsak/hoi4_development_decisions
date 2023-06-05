@@ -59,7 +59,7 @@ infrastructure_decisions_category = {
         cost = 25
         fire_only_once = no
 		state_target = yes
-		highlight_color_while_active = 1 
+
 		on_map_mode = map_only 
         available = {
 			FROM = {
@@ -97,7 +97,7 @@ infrastructure_decisions_category = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			base = 100
 			
 			modifier = {
 				NOT = {tag = JAP}
@@ -120,7 +120,7 @@ infrastructure_decisions_category = {
         cost = 25
         fire_only_once = no
 		state_target = yes
-		highlight_color_while_active = 1 
+
 		on_map_mode = map_only 
 		
         available = {
@@ -163,8 +163,9 @@ infrastructure_decisions_category = {
 				set_state_flag = extra_building_slot_flag_2
 			}
 		}
+		
 		ai_will_do = {
-			factor = 10
+			base = 100
 			
 			modifier = {
 				NOT = {tag = JAP}
@@ -187,7 +188,7 @@ infrastructure_decisions_category = {
         cost = 50
         fire_only_once = no
 		state_target = yes
-		highlight_color_while_active = 1 
+
 		on_map_mode = map_only 
 		
         available = {
@@ -230,8 +231,9 @@ infrastructure_decisions_category = {
 				set_state_flag = extra_building_slot_flag_3
 			}
 		}
+		
 		ai_will_do = {
-			factor = 10
+			base = 100
 			
 			modifier = {
 				NOT = {tag = JAP}
@@ -253,7 +255,7 @@ infrastructure_decisions_category = {
         cost = 75
         fire_only_once = no
 		state_target = yes
-		highlight_color_while_active = 1 
+
 		on_map_mode = map_only 
 		
         available = {
@@ -296,8 +298,9 @@ infrastructure_decisions_category = {
 				set_state_flag = extra_building_slot_flag_4
 			}
 		}
+		
 		ai_will_do = {
-			factor = 10
+			base = 100
 			
 			modifier = {
 				NOT = {tag = JAP}
@@ -322,7 +325,7 @@ steel_mills_tier_1 = {
 		}
 	fire_only_once = no
 	state_target = yes
-	highlight_color_while_active = 1 
+
 	on_map_mode = map_only 
 	cost = 50
 	days_remove = 60
@@ -357,13 +360,15 @@ steel_mills_tier_1 = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		base = 10
 			
-			modifier = {
-				NOT = {tag = JAP}
-				is_major = yes
-				factor = 0
-			}
+		modifier = {
+			NOT = {tag = JAP}
+			is_major = yes
+			factor = 0
+		}
+		
+		factor = 2
 	}
 	
 	remove_effect = { 
@@ -389,7 +394,7 @@ steel_mills_tier_2 = {
 		}
 	fire_only_once = no
 	state_target = yes
-	highlight_color_while_active = 1 
+
 	on_map_mode = map_only 
 	cost = 75
 	days_remove = 90

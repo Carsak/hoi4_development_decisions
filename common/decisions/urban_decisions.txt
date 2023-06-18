@@ -21,7 +21,7 @@ urban_decisions_category = {
 		}
 
 		visible = {
-			NOT = {has_global_flag = industry_hide_decisions}
+			NOT = {has_country_flag = industry_hide_decisions}
 
 			num_of_civilian_factories > 20
 
@@ -91,7 +91,7 @@ urban_decisions_category = {
 		}
 
 		visible = {
-			NOT = {has_global_flag = industry_hide_decisions}
+			NOT = {has_country_flag = industry_hide_decisions}
 			num_of_civilian_factories > 25
 
 			FROM = {
@@ -152,7 +152,7 @@ urban_decisions_category = {
 		}
 
 		visible = {
-			NOT = {has_global_flag = industry_hide_decisions}
+			NOT = {has_country_flag = industry_hide_decisions}
             
 			num_of_civilian_factories > 35
             
@@ -209,7 +209,7 @@ urban_decisions_category = {
 		}
 
 		visible = {
-			NOT = {has_global_flag = industry_hide_decisions}
+			NOT = {has_country_flag = industry_hide_decisions}
 			num_of_civilian_factories > 45
             
 			FROM = {

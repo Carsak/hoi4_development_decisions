@@ -71,7 +71,13 @@ urban_decisions_category = {
 			
 		}
 		ai_will_do = {
-			factor = 0
+			base = 20
+			
+			modifier = {
+				NOT = {tag = JAP}
+				is_major = yes
+				factor = 0
+			}
 		}
     }
 	

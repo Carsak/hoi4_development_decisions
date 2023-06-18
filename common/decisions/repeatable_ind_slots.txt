@@ -71,7 +71,7 @@ infrastructure_decisions_category = {
 					}
 				}
 				NOT = { has_state_flag = extra_building_slot_flag_1 }
-				infrastructure > 2      
+				infrastructure > 1
 			}
         }
         visible = {
@@ -85,7 +85,7 @@ infrastructure_decisions_category = {
 					}
 				}
 				NOT = { has_state_flag = extra_building_slot_flag_1 }
-				infrastructure > 2     
+				infrastructure > 1
 			}	
 		}
 		
@@ -132,7 +132,7 @@ infrastructure_decisions_category = {
 				NOT = { has_state_flag = extra_building_slot_flag_2 }
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT
-				infrastructure > 3   
+				infrastructure > 2
 			}
 		
         }
@@ -147,7 +147,7 @@ infrastructure_decisions_category = {
 				NOT = { has_state_flag = extra_building_slot_flag_2 }
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT
-				infrastructure > 3   
+				infrastructure > 2
 			}
 		}
 		
@@ -200,7 +200,7 @@ infrastructure_decisions_category = {
 				NOT = { has_state_flag = extra_building_slot_flag_3 }
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT
-				infrastructure > 4   
+				infrastructure > 3
 			}
 		
         }
@@ -215,7 +215,7 @@ infrastructure_decisions_category = {
 				NOT = { has_state_flag = extra_building_slot_flag_3 }
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT
-				infrastructure > 4   
+				infrastructure > 3
 			}
 		}
 		
@@ -267,7 +267,7 @@ infrastructure_decisions_category = {
 				NOT = { has_state_flag = extra_building_slot_flag_4 }
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT
-				infrastructure > 4   
+				infrastructure > 4
 			}
 		
         }
@@ -282,7 +282,7 @@ infrastructure_decisions_category = {
 				NOT = { has_state_flag = extra_building_slot_flag_4 }
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT
-				infrastructure > 4  
+				infrastructure > 4
 			}
 		}
 		

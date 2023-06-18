@@ -27,8 +27,8 @@ factory_slots_1 = {
 	}
 
 	visible = {
-		NOT = {has_global_flag = industry_hide_decisions}
-		NOT = {has_global_flag = factory_hide_decisions}
+		NOT = {has_country_flag = industry_hide_decisions}
+		NOT = {has_country_flag = factory_hide_decisions}
         
 		num_of_civilian_factories > 6
         
@@ -88,8 +88,8 @@ factory_slots_2 = {
 	}
 
 	visible = {
-		NOT = {has_global_flag = industry_hide_decisions}
-		NOT = {has_global_flag = factory_hide_decisions}
+		NOT = {has_country_flag = industry_hide_decisions}
+		NOT = {has_country_flag = factory_hide_decisions}
         
 		num_of_civilian_factories > 11
         
@@ -158,8 +158,8 @@ factory_slots_3 = {
 	}
 
 	visible = {
-		NOT = {has_global_flag = industry_hide_decisions}
-		NOT = {has_global_flag = factory_hide_decisions}
+		NOT = {has_country_flag = industry_hide_decisions}
+		NOT = {has_country_flag = factory_hide_decisions}
         
 		num_of_civilian_factories > 16
         
@@ -229,8 +229,8 @@ factory_slots_4 = {
 	}
 
 	visible = {
-		NOT = {has_global_flag = industry_hide_decisions}
-		NOT = {has_global_flag = factory_hide_decisions}
+		NOT = {has_country_flag = industry_hide_decisions}
+		NOT = {has_country_flag = factory_hide_decisions}
         
 		num_of_civilian_factories > 21
         

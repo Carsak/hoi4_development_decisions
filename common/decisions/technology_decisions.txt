@@ -19,7 +19,7 @@ technology_decisions_category = {
 			consumer_goods_factor = 0.05
 		}
 		visible = {
-			NOT = {has_global_flag = industry_hide_decisions}
+			NOT = {has_country_flag = industry_hide_decisions}
 			NOT = {has_idea = university_10}
 			num_of_civilian_factories_available_for_projects > 8
 			FROM = {
@@ -194,7 +194,7 @@ technology_decisions_category = {
 
         visible = {
 			num_of_civilian_factories_available_for_projects > 15
-			NOT = {has_global_flag = industry_hide_decisions}
+			NOT = {has_country_flag = industry_hide_decisions}
 			NOT = {has_country_flag = university_investment_2}
 			FROM = {
 				has_state_flag = university_investment_1

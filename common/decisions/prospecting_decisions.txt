@@ -32,8 +32,8 @@ prospecting_1 = {
 	}
 
 	visible = {
-		NOT = {has_global_flag = industry_hide_decisions}
-		NOT = {has_global_flag = prospecting_hide_decisions}
+		NOT = {has_country_flag = industry_hide_decisions}
+		NOT = {has_country_flag = prospecting_hide_decisions}
 		has_tech = excavation1
 		
 		num_of_civilian_factories > 7

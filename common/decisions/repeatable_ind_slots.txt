@@ -90,10 +90,10 @@ infrastructure_decisions_category = {
 		}
 		
         complete_effect = {
-				FROM = {
-					add_extra_state_shared_building_slots = 1
-					set_state_flag = extra_building_slot_flag_1
-				}
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = extra_building_slot_flag_1
+			}
 		}
 		
 		ai_will_do = {

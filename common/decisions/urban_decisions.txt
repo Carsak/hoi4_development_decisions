@@ -62,6 +62,11 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_1
 				set_state_category = large_town
 				
+				add_state_modifier = {
+					modifier = {
+						state_production_speed_supply_node_factor = 0.2
+					}
+				}
 			}
 			
 		}
@@ -125,6 +130,12 @@ urban_decisions_category = {
 			FROM = {			
 				set_state_flag = urban_upgrade_flag_2
 				set_state_category = large_city
+				
+				add_state_modifier = {
+					modifier = {
+						state_production_speed_supply_node_factor = 0.2
+					}
+				}
 			}		
 		}
 		ai_will_do = {
@@ -181,6 +192,12 @@ urban_decisions_category = {
 			FROM = {
 				set_state_flag = urban_upgrade_flag_3
 				set_state_category = metropolis
+				
+				add_state_modifier = {
+					modifier = {
+						state_production_speed_supply_node_factor = 0.2
+					}
+				}
 			}
 			
 		}
@@ -237,6 +254,12 @@ urban_decisions_category = {
 			FROM = {
 				set_state_flag = urban_upgrade_flag_4
 				set_state_category = megalopolis
+				
+				add_state_modifier = {
+					modifier = {
+						state_production_speed_supply_node_factor = 0.2
+					}
+				}
 			}
 			
 		}

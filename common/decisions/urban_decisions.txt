@@ -26,7 +26,7 @@ urban_decisions_category = {
 			num_of_civilian_factories > 20
 
 			FROM = {
-				#has_state_flag = extra_building_slot_flag_2
+				has_state_flag = extra_building_slot_flag_2
 				OR = {
 					has_state_category = enclave 
 					has_state_category = pastoral 
@@ -44,7 +44,7 @@ urban_decisions_category = {
 			num_of_civilian_factories_available_for_projects > 0
 
             FROM = {
-				#has_state_flag = extra_building_slot_flag_2
+				has_state_flag = extra_building_slot_flag_2
 				OR = {
 					has_state_category = enclave 
 					has_state_category = pastoral 
@@ -71,7 +71,7 @@ urban_decisions_category = {
 			
 		}
 		ai_will_do = {
-			base = 50
+			base = 20
 			
 			modifier = {
 				NOT = {tag = JAP}
@@ -90,8 +90,7 @@ urban_decisions_category = {
 		}
 
 		cost = 100
-		#days_remove = 75
-		days_remove = 2
+		days_remove = 75
 		fire_only_once = no
 		state_target = yes
 
@@ -107,7 +106,7 @@ urban_decisions_category = {
 			num_of_civilian_factories > 25
 
 			FROM = {
-				#has_state_flag = extra_building_slot_flag_3
+				has_state_flag = extra_building_slot_flag_3
 				OR = {
 					has_state_category = large_town 
 					has_state_category = city
@@ -122,7 +121,7 @@ urban_decisions_category = {
 			num_of_civilian_factories_available_for_projects > 0
 
             FROM = {
-				#has_state_flag = extra_building_slot_flag_3
+				has_state_flag = extra_building_slot_flag_3
 				OR = {
 					has_state_category = large_town 
 					has_state_category = city
@@ -138,20 +137,10 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_2
 				set_state_category = large_city
 				
-				set_temp_variable  = {state_urban_bonuses = 0.5}
-				
-				if = {
-					limit = {
-						has_state_flag = urban_upgrade_flag_1
+				add_state_modifier = {
+					modifier = {
+						state_production_speed_supply_node_factor = 0.2
 					}
-					
-					set_temp_variable  = {state_urban_bonuses = 0.2}
-				} else = {
-					set_temp_variable  = {state_urban_bonuses = 0.4}
-				}
-				
-						modifier = {
-							state_production_speed_supply_node_factor = state_urban_bonuses
 				}
 			}		
 		}

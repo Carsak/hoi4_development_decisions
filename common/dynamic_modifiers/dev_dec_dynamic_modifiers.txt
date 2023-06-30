@@ -1,0 +1,7 @@
+#### URBAN MODIDIFERS
+DEV_DEC_state_development_dynamic_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_ETH_state_development
+	state_production_speed_buildings_factor = DEV_DEC_state_development_production_speed
+	local_building_slots_factor = DEV_DEC_state_development_local_building_slots_factor
+}

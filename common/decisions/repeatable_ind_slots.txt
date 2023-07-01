@@ -218,9 +218,9 @@ infrastructure_decisions_category = {
 				infrastructure > 3
 			}
 		}
-		
-		days_remove = 60
 
+		days_remove = 60
+		
 		modifier = {
 			consumer_goods_factor = 0.05
 		}

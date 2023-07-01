@@ -12,7 +12,7 @@ urban_decisions_category = {
 		days_remove = 60
 		fire_only_once = no
 		state_target = yes
-		highlight_color_while_active = 1 
+
 		on_map_mode = map_only 
 
 		
@@ -62,16 +62,17 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_1
 				set_state_category = large_town
 				
-				add_state_modifier = {
-					modifier = {
-						state_production_speed_supply_node_factor = 0.2
-					}
+				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.2}
+				set_variable = {DEV_DEC_state_monthly_population = 0.3}
+				
+				add_dynamic_modifier = {
+					modifier = DEV_DEC_urban_dynamic_modifier
 				}
 			}
 			
 		}
 		ai_will_do = {
-			base = 20
+			base = 75
 			
 			modifier = {
 				NOT = {tag = JAP}
@@ -93,7 +94,7 @@ urban_decisions_category = {
 		days_remove = 75
 		fire_only_once = no
 		state_target = yes
-		highlight_color_while_active = 1 
+
 		on_map_mode = map_only 
 
 
@@ -137,13 +138,15 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_2
 				set_state_category = large_city
 				
-				add_state_modifier = {
-					modifier = {
-						state_production_speed_supply_node_factor = 0.2
-					}
+				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.4}
+				set_variable = {DEV_DEC_state_monthly_population = 0.5}
+				
+				add_dynamic_modifier = {
+					modifier = DEV_DEC_urban_dynamic_modifier
 				}
 			}		
 		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -161,7 +164,7 @@ urban_decisions_category = {
 		days_remove = 90
 		fire_only_once = no
 		state_target = yes
-		highlight_color_while_active = 1 
+
 		on_map_mode = map_only 
 
 		modifier = {
@@ -199,10 +202,11 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_3
 				set_state_category = metropolis
 				
-				add_state_modifier = {
-					modifier = {
-						state_production_speed_supply_node_factor = 0.2
-					}
+				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.6}
+				set_variable = {DEV_DEC_state_monthly_population = 0.7}
+				
+				add_dynamic_modifier = {
+					modifier = DEV_DEC_urban_dynamic_modifier
 				}
 			}
 			
@@ -224,7 +228,7 @@ urban_decisions_category = {
 		days_remove = 90
 		fire_only_once = no
 		state_target = yes
-		highlight_color_while_active = 1 
+
 		on_map_mode = map_only 
 
 		modifier = {
@@ -261,10 +265,11 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_4
 				set_state_category = megalopolis
 				
-				add_state_modifier = {
-					modifier = {
-						state_production_speed_supply_node_factor = 0.2
-					}
+				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.8}
+				set_variable = {DEV_DEC_state_monthly_population = 0.95}
+				
+				add_dynamic_modifier = {
+					modifier = DEV_DEC_urban_dynamic_modifier
 				}
 			}
 			

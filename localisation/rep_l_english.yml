@@ -24,6 +24,8 @@
  urban_upgrade_flag_2:0 "Urban Development 2 completed"
  urban_upgrade_flag_3:0 "Urban Development 3 completed"
  urban_upgrade_flag_4:0 "Urban Development 4 completed"
+ state_monthly_population:0 "Monthly population"
+ DEV_DEC_urban_dynamic_modifier:0 "Urbanization"
  
  factory_decisions_category:0 "Development Decisions"
  factory_decisions_category_desc:0 "Improve our country's infrastucture and industrial capacity in a variety of ways. States with high levels of infrastructure have available upgrades shown on the map."

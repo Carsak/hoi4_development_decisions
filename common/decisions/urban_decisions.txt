@@ -9,7 +9,7 @@ urban_decisions_category = {
 		}
 
 		cost = 100
-		days_remove = 60
+		days_remove = 2
 		fire_only_once = no
 		state_target = yes
 
@@ -62,16 +62,17 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_1
 				set_state_category = large_town
 				
-				add_state_modifier = {
-					modifier = {
-						state_production_speed_supply_node_factor = 0.2
-					}
+				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.2}
+				set_variable = {DEV_DEC_state_monthly_population = 0.3}
+				
+				add_dynamic_modifier = {
+					modifier = DEV_DEC_urban_dynamic_modifier
 				}
 			}
 			
 		}
 		ai_will_do = {
-			base = 20
+			base = 75
 			
 			modifier = {
 				NOT = {tag = JAP}
@@ -90,7 +91,7 @@ urban_decisions_category = {
 		}
 
 		cost = 100
-		days_remove = 75
+		days_remove = 2
 		fire_only_once = no
 		state_target = yes
 
@@ -137,13 +138,15 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_2
 				set_state_category = large_city
 				
-				add_state_modifier = {
-					modifier = {
-						state_production_speed_supply_node_factor = 0.2
-					}
+				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.4}
+				set_variable = {DEV_DEC_state_monthly_population = 0.5}
+				
+				add_dynamic_modifier = {
+					modifier = DEV_DEC_urban_dynamic_modifier
 				}
 			}		
 		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -193,17 +196,16 @@ urban_decisions_category = {
             }
 			
         }
+		
+		complete_effect = {
+			set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.6}
+			set_variable = {DEV_DEC_state_monthly_population = 0.7}
+		}
 
         remove_effect = {
 			FROM = {
 				set_state_flag = urban_upgrade_flag_3
 				set_state_category = metropolis
-				
-				add_state_modifier = {
-					modifier = {
-						state_production_speed_supply_node_factor = 0.2
-					}
-				}
 			}
 			
 		}
@@ -255,17 +257,16 @@ urban_decisions_category = {
             }
 			
         }
+		
+		complete_effect = {
+			set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.8}
+			set_variable = {DEV_DEC_state_monthly_population = 0.95}
+		}
 
         remove_effect = {
 			FROM = {
 				set_state_flag = urban_upgrade_flag_4
 				set_state_category = megalopolis
-				
-				add_state_modifier = {
-					modifier = {
-						state_production_speed_supply_node_factor = 0.2
-					}
-				}
 			}
 			
 		}

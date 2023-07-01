@@ -151,7 +151,7 @@ infrastructure_decisions_category = {
 			}
 		}
 		
-		days_remove = 2
+		days_remove = 30
 
 		modifier = {
             consumer_goods_factor = 0.03
@@ -186,7 +186,6 @@ infrastructure_decisions_category = {
 		}
 
         cost = 50
-		days_remove = 2
         fire_only_once = no
 		state_target = yes
 
@@ -220,6 +219,8 @@ infrastructure_decisions_category = {
 			}
 		}
 
+		days_remove = 60
+		
 		modifier = {
 			consumer_goods_factor = 0.05
 		}

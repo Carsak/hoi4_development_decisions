@@ -9,7 +9,7 @@ urban_decisions_category = {
 		}
 
 		cost = 100
-		days_remove = 2
+		days_remove = 60
 		fire_only_once = no
 		state_target = yes
 
@@ -91,7 +91,7 @@ urban_decisions_category = {
 		}
 
 		cost = 100
-		days_remove = 2
+		days_remove = 75
 		fire_only_once = no
 		state_target = yes
 
@@ -196,16 +196,18 @@ urban_decisions_category = {
             }
 			
         }
-		
-		complete_effect = {
-			set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.6}
-			set_variable = {DEV_DEC_state_monthly_population = 0.7}
-		}
 
         remove_effect = {
 			FROM = {
 				set_state_flag = urban_upgrade_flag_3
 				set_state_category = metropolis
+				
+				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.6}
+				set_variable = {DEV_DEC_state_monthly_population = 0.7}
+				
+				add_dynamic_modifier = {
+					modifier = DEV_DEC_urban_dynamic_modifier
+				}
 			}
 			
 		}
@@ -257,16 +259,18 @@ urban_decisions_category = {
             }
 			
         }
-		
-		complete_effect = {
-			set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.8}
-			set_variable = {DEV_DEC_state_monthly_population = 0.95}
-		}
 
         remove_effect = {
 			FROM = {
 				set_state_flag = urban_upgrade_flag_4
 				set_state_category = megalopolis
+				
+				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.8}
+				set_variable = {DEV_DEC_state_monthly_population = 0.95}
+				
+				add_dynamic_modifier = {
+					modifier = DEV_DEC_urban_dynamic_modifier
+				}
 			}
 			
 		}

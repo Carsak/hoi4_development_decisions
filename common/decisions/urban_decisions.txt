@@ -62,9 +62,14 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_1
 				set_state_category = large_town
 				
-				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.2}
-				set_variable = {DEV_DEC_state_monthly_population = 0.3}
-				
+				add_to_variable = {
+					DEV_DEC_supply_node_construction_speed = 0.08
+				}
+				add_to_variable = {
+					DEV_DEC_monthly_population = 0.03
+					
+				}
+					
 				add_dynamic_modifier = {
 					modifier = DEV_DEC_urban_dynamic_modifier
 				}
@@ -138,8 +143,13 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_2
 				set_state_category = large_city
 				
-				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.4}
-				set_variable = {DEV_DEC_state_monthly_population = 0.5}
+				add_to_variable = {
+					DEV_DEC_supply_node_construction_speed = 0.08
+				}
+				add_to_variable = {
+					DEV_DEC_monthly_population = 0.03
+					
+				}
 				
 				add_dynamic_modifier = {
 					modifier = DEV_DEC_urban_dynamic_modifier
@@ -202,8 +212,13 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_3
 				set_state_category = metropolis
 				
-				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.6}
-				set_variable = {DEV_DEC_state_monthly_population = 0.7}
+				add_to_variable = {
+					DEV_DEC_supply_node_construction_speed = 0.08
+				}
+				add_to_variable = {
+					DEV_DEC_monthly_population = 0.03
+					
+				}
 				
 				add_dynamic_modifier = {
 					modifier = DEV_DEC_urban_dynamic_modifier
@@ -265,8 +280,15 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_4
 				set_state_category = megalopolis
 				
-				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.8}
-				set_variable = {DEV_DEC_state_monthly_population = 0.95}
+				# modifier@state_monthly_population = 0
+				
+				add_to_variable = {
+					DEV_DEC_supply_node_construction_speed = 0.08
+				}
+				add_to_variable = {
+					DEV_DEC_monthly_population = 0.03
+					
+				}
 				
 				add_dynamic_modifier = {
 					modifier = DEV_DEC_urban_dynamic_modifier

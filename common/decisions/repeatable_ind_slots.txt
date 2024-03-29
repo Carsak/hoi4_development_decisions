@@ -343,9 +343,10 @@ steel_mills_tier_1 = {
 	}
 
 	visible = {
-		NOT = {has_country_flag = industry_hide_decisions}
+		NOT = {has_country_flag = factory_hide_decisions}
 		has_tech = excavation1
 		num_of_civilian_factories_available_for_projects > 1
+		
 		FROM = {
 			has_state_flag = extra_building_slot_flag_2
 			NOT = { has_state_flag = steel_mills_1 }
@@ -411,9 +412,10 @@ steel_mills_tier_2 = {
 	}
 
 	visible = {
-		NOT = {has_country_flag = industry_hide_decisions}
+		NOT = {has_country_flag = factory_hide_decisions}
 		has_tech = excavation3
 		num_of_civilian_factories_available_for_projects > 1
+		
 		FROM = {
 			has_state_flag = steel_mills_1
 			NOT = { has_state_flag = steel_mills_2 }

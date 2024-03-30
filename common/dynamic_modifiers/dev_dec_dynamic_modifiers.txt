@@ -2,7 +2,7 @@
 DEV_DEC_urban_dynamic_modifier = {
 	enable = { always = yes }
 	
-	#icon = GFX_modifiers_ETH_state_development
+	#icon = GFX_focus_SWE_hygienic_housing
 	#state_production_speed_supply_node_factor = DEV_DEC_state_supply_node_construction_speed
 	#state_monthly_population = DEV_DEC_state_monthly_population
 	

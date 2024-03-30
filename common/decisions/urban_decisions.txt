@@ -23,8 +23,6 @@ urban_decisions_category = {
 		visible = {
 			NOT = {has_country_flag = industry_hide_decisions}
 
-			num_of_civilian_factories > 20
-
 			FROM = {
 				has_state_flag = extra_building_slot_flag_2
 				OR = {
@@ -61,13 +59,17 @@ urban_decisions_category = {
 			FROM = {
 				set_state_flag = urban_upgrade_flag_1
 				set_state_category = large_town
-				
-				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.2}
-				set_variable = {DEV_DEC_state_monthly_population = 0.3}
-				
-				add_dynamic_modifier = {
-					modifier = DEV_DEC_urban_dynamic_modifier
+			}
+			
+			add_to_variable = {
+					DEV_DEC_supply_node_construction_speed = 0.08
 				}
+			add_to_variable = {
+				DEV_DEC_monthly_population = 0.03				
+			}
+				
+			add_dynamic_modifier = {
+				modifier = DEV_DEC_urban_dynamic_modifier
 			}
 			
 		}
@@ -104,7 +106,6 @@ urban_decisions_category = {
 
 		visible = {
 			NOT = {has_country_flag = industry_hide_decisions}
-			num_of_civilian_factories > 25
 
 			FROM = {
 				has_state_flag = extra_building_slot_flag_3
@@ -137,14 +138,18 @@ urban_decisions_category = {
 			FROM = {			
 				set_state_flag = urban_upgrade_flag_2
 				set_state_category = large_city
+			}	
+
+			add_to_variable = {
+				DEV_DEC_supply_node_construction_speed = 0.08
+			}
+			add_to_variable = {
+				DEV_DEC_monthly_population = 0.03
+			}
 				
-				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.4}
-				set_variable = {DEV_DEC_state_monthly_population = 0.5}
-				
-				add_dynamic_modifier = {
-					modifier = DEV_DEC_urban_dynamic_modifier
-				}
-			}		
+			add_dynamic_modifier = {
+				modifier = DEV_DEC_urban_dynamic_modifier
+			}			
 		}
 		
 		ai_will_do = {
@@ -174,8 +179,6 @@ urban_decisions_category = {
 		visible = {
 			NOT = {has_country_flag = industry_hide_decisions}
             
-			num_of_civilian_factories > 35
-            
 			FROM = {
 				has_state_flag = extra_building_slot_flag_3
 				has_state_category = large_city 
@@ -201,13 +204,17 @@ urban_decisions_category = {
 			FROM = {
 				set_state_flag = urban_upgrade_flag_3
 				set_state_category = metropolis
-				
-				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.6}
-				set_variable = {DEV_DEC_state_monthly_population = 0.7}
-				
-				add_dynamic_modifier = {
-					modifier = DEV_DEC_urban_dynamic_modifier
-				}
+			}
+			
+			add_to_variable = {
+				DEV_DEC_supply_node_construction_speed = 0.08
+			}
+			add_to_variable = {
+				DEV_DEC_monthly_population = 0.03				
+			}
+			
+			add_dynamic_modifier = {
+				modifier = DEV_DEC_urban_dynamic_modifier
 			}
 			
 		}
@@ -237,7 +244,6 @@ urban_decisions_category = {
 
 		visible = {
 			NOT = {has_country_flag = industry_hide_decisions}
-			num_of_civilian_factories > 45
             
 			FROM = {
 				has_state_flag = extra_building_slot_flag_4
@@ -264,15 +270,18 @@ urban_decisions_category = {
 			FROM = {
 				set_state_flag = urban_upgrade_flag_4
 				set_state_category = megalopolis
-				
-				set_variable = {DEV_DEC_state_supply_node_construction_speed = 0.8}
-				set_variable = {DEV_DEC_state_monthly_population = 0.95}
-				
-				add_dynamic_modifier = {
-					modifier = DEV_DEC_urban_dynamic_modifier
-				}
 			}
 			
+			add_to_variable = {
+				DEV_DEC_supply_node_construction_speed = 0.08
+			}
+			add_to_variable = {
+				DEV_DEC_monthly_population = 0.03
+			}
+
+			add_dynamic_modifier = {
+				modifier = DEV_DEC_urban_dynamic_modifier
+			}
 		}
 		ai_will_do = {
 			factor = 0

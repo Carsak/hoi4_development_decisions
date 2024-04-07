@@ -15,7 +15,6 @@ urban_decisions_category = {
 
 		on_map_mode = map_only 
 
-		
 		modifier = {
 			consumer_goods_factor = 0.1
 		}
@@ -75,10 +74,9 @@ urban_decisions_category = {
 							}
 						}
 					}
-				}
-				
-				add_to_variable = {
-					DEV_DEC_monthly_population = 0.03
+					add_to_variable = {
+						DEV_DEC_monthly_population = 0.03
+					}
 				}
 			}
 			

@@ -1,16 +1,22 @@
 factory_decisions_category = {
 factory_slots_1 = {
 	icon = ger_military_buildup
-	target_trigger = {
-		FROM = { 
-			is_owned_by = ROOT
-		}
-	}	
+	state_target = any_owned_state
+
+	allowed = {
+		is_ai = no
+	}
+
+	#target_trigger = {
+	#	FROM = {
+	#		is_owned_by = ROOT
+	#	}
+	#}
 
 	cost = 50
 	days_remove = 50
 	fire_only_once = no
-	state_target = yes
+
 	highlight_color_while_active = 1 
 	on_map_mode = map_only 
 	
@@ -62,6 +68,7 @@ factory_slots_1 = {
 		}
 	}
 }
+
 factory_slots_2 = {
 	icon = ger_military_buildup
 	target_trigger = {

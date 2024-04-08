@@ -4,14 +4,15 @@ prospecting_category = {
 prospecting_1 = {
 	
 	icon = aluminium
+	state_target = any_owned_state
 	
-	target_trigger = {
-		FROM = { 
-			is_owned_by = ROOT
-		}
-	}
+	#target_trigger = {
+	#	FROM = {
+	#		is_owned_by = ROOT
+	#	}
+	#}
 	fire_only_once = no
-	state_target = yes
+
 	highlight_color_while_active = 1 
 	on_map_mode = map_only 
 	cost = 25

@@ -50,17 +50,13 @@ infrastructure_decisions_category = {
 	extra_building_slot_1 = {
 
 		icon = generic_construction
-        #target_trigger = {
-		#	FROM = {
-		#		is_owned_by = ROOT
-		#	}
-		#}
 
         cost = 25
         fire_only_once = no
+		on_map_mode = map_only
+		
 		state_target = any_owned_state
-
-		on_map_mode = map_only 
+		
         available = {
 			FROM = {
 				is_owned_by = ROOT
@@ -385,10 +381,6 @@ steel_mills_tier_1 = {
 
 steel_mills_tier_2 = {
 	icon = steel
-
-	allowed = {
-		is_ai = no
-	}
 
 	#target_trigger = {
 	#		FROM = {

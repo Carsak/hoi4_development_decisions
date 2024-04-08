@@ -1,23 +1,19 @@
 prospecting_category = {
 
-
-prospecting_1 = {
-	
+prospecting_1 = {	
 	icon = aluminium
-	state_target = any_owned_state
-	
-	#target_trigger = {
-	#	FROM = {
-	#		is_owned_by = ROOT
-	#	}
-	#}
+
+	target_trigger = {
+		is_ai = no
+	}
+
 	fire_only_once = no
 
-	highlight_color_while_active = 1 
 	on_map_mode = map_only 
 	cost = 25
 	days_remove = 90
 	
+	state_target = any_owned_state
 	
 	available = {
 		has_tech = excavation1
@@ -274,8 +270,4 @@ prospecting_1 = {
 		}
 	}
 }
-
-
-
-
 }

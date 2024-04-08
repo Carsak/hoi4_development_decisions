@@ -2,16 +2,11 @@ urban_decisions_category = {
 
 	urban_upgrade_decision_1 = {
 		icon = generic_operation
-		target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
-		}
 
 		cost = 100
 		days_remove = 60
 		fire_only_once = no
-		state_target = yes
+		state_target = any_owned_state
 
 		on_map_mode = map_only 
 
@@ -98,16 +93,11 @@ urban_decisions_category = {
 	
 	urban_upgrade_decision_2 = {
 		icon = generic_operation
-		target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
-		}
 
 		cost = 100
 		days_remove = 75
 		fire_only_once = no
-		state_target = yes
+		state_target = any_owned_state
 
 		on_map_mode = map_only 
 
@@ -171,16 +161,11 @@ urban_decisions_category = {
 	
 	urban_upgrade_decision_3 = {
 		icon = generic_operation
-		target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
-		}
 
 		cost = 150
 		days_remove = 90
 		fire_only_once = no
-		state_target = yes
+		state_target = any_owned_state
 
 		on_map_mode = map_only 
 
@@ -237,16 +222,11 @@ urban_decisions_category = {
 	
 	urban_upgrade_decision_4 = {
 		icon = generic_operation
-		target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
-		}
 
 		cost = 150
 		days_remove = 90
 		fire_only_once = no
-		state_target = yes
+		state_target = any_owned_state
 
 		on_map_mode = map_only 
 

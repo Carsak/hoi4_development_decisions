@@ -1,24 +1,18 @@
 factory_decisions_category = {
 factory_slots_1 = {
 	icon = ger_military_buildup
-	state_target = any_owned_state
-
-	allowed = {
+	
+	target_trigger = {
 		is_ai = no
 	}
-
-	#target_trigger = {
-	#	FROM = {
-	#		is_owned_by = ROOT
-	#	}
-	#}
-
+	
 	cost = 50
 	days_remove = 50
 	fire_only_once = no
 
-	highlight_color_while_active = 1 
 	on_map_mode = map_only 
+	
+	state_target = any_owned_state
 	
 	available = {
         num_of_civilian_factories > 6
@@ -80,9 +74,10 @@ factory_slots_2 = {
 	cost = 50
 	days_remove = 50
 	fire_only_once = no
-	state_target = yes
-	highlight_color_while_active = 1 
 	on_map_mode = map_only 
+	
+	state_target = any_owned_state
+	
 	available = {
 		num_of_civilian_factories > 11
 		num_of_civilian_factories_available_for_projects > 0
@@ -143,17 +138,14 @@ factory_slots_2 = {
 factory_slots_3 = {
 	
 	icon = ger_military_buildup
-	target_trigger = {
-		FROM = { 
-			is_owned_by = ROOT
-		}
-	}
+	
 	cost = 70
 	days_remove = 70
 	fire_only_once = no
-	state_target = yes
-	highlight_color_while_active = 1 
+
 	on_map_mode = map_only 
+	
+	state_target = any_owned_state
 	
 	available = {
 		num_of_civilian_factories > 16
@@ -215,18 +207,14 @@ factory_slots_3 = {
 
 factory_slots_4 = {
 	icon = ger_military_buildup
-	target_trigger = {
-		FROM = { 
-			is_owned_by = ROOT
-		}
-	}
+
 	cost = 100
 	days_remove = 100
 	fire_only_once = no
-	state_target = yes
-	highlight_color_while_active = 1 
+
 	on_map_mode = map_only 
 	
+	state_target = any_owned_state
 
 	available = {
 		num_of_civilian_factories > 21
@@ -257,8 +245,6 @@ factory_slots_4 = {
 			infrastructure > 4
 		}
 	}
-
-	fire_only_once = no
 
 	modifier = {
 		consumer_goods_factor = 0.3

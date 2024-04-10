@@ -65,10 +65,9 @@ factory_slots_1 = {
 
 factory_slots_2 = {
 	icon = ger_military_buildup
+
 	target_trigger = {
-		FROM = { 
-			is_owned_by = ROOT
-		}
+		is_ai = no
 	}
 
 	cost = 50
@@ -138,6 +137,10 @@ factory_slots_2 = {
 factory_slots_3 = {
 	
 	icon = ger_military_buildup
+
+	target_trigger = {
+		is_ai = no
+	}
 	
 	cost = 70
 	days_remove = 70
@@ -207,6 +210,10 @@ factory_slots_3 = {
 
 factory_slots_4 = {
 	icon = ger_military_buildup
+
+	target_trigger = {
+		is_ai = no
+	}
 
 	cost = 100
 	days_remove = 100

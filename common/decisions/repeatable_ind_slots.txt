@@ -107,12 +107,6 @@ infrastructure_decisions_category = {
 
 		icon = generic_construction
 
-        #target_trigger = {
-		#	FROM = {
-		#		is_owned_by = ROOT
-		#	}
-		#}
-
         cost = 25
         fire_only_once = no
 		state_target = any_owned_state
@@ -174,12 +168,6 @@ infrastructure_decisions_category = {
 	extra_building_slot_3 = {
 
 		icon = generic_construction
-
-		#target_trigger = {
-		#	FROM = {
-		#		is_owned_by = ROOT
-		#	}
-		#}
 
         cost = 50
         fire_only_once = no
@@ -243,11 +231,6 @@ infrastructure_decisions_category = {
 
 		icon = generic_construction
 
-        #target_trigger = {
-		#	FROM = {
-		#		is_owned_by = ROOT
-		#	}
-		#}
         cost = 75
         fire_only_once = no
 		state_target = any_owned_state
@@ -314,11 +297,6 @@ steel_mills_tier_1 = {
 	
 	icon = steel
 	
-	#target_trigger = {
-	#		FROM = {
-	#			is_owned_by = ROOT
-	#		}
-	#	}
 	fire_only_once = no
 	state_target = any_owned_state
 
@@ -382,11 +360,10 @@ steel_mills_tier_1 = {
 steel_mills_tier_2 = {
 	icon = steel
 
-	#target_trigger = {
-	#		FROM = {
-	#			is_owned_by = ROOT
-	#		}
-	#	}
+	target_trigger = {
+		is_ai = no
+	}
+
 	fire_only_once = no
 	state_target = any_owned_state
 

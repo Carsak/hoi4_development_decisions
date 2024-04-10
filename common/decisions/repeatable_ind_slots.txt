@@ -216,15 +216,6 @@ infrastructure_decisions_category = {
 			}
 		}
 		
-		ai_will_do = {
-			base = 100
-			
-			modifier = {
-				NOT = {tag = JAP}
-				is_major = yes
-				factor = 0
-			}
-		}
     }
 	
 	extra_building_slot_4 = {
@@ -277,16 +268,6 @@ infrastructure_decisions_category = {
 				set_state_flag = extra_building_slot_flag_4
 			}
 		}
-		
-		ai_will_do = {
-			base = 100
-			
-			modifier = {
-				NOT = {tag = JAP}
-				is_major = yes
-				factor = 0
-			}
-		}
     }
 	
 	
@@ -335,15 +316,13 @@ steel_mills_tier_1 = {
 	}
 
 	ai_will_do = {
-		base = 10
+		base = 20
 			
 		modifier = {
 			NOT = {tag = JAP}
 			is_major = yes
 			factor = 0
 		}
-		
-		factor = 2
 	}
 	
 	remove_effect = { 

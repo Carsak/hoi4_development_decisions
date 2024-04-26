@@ -50,17 +50,13 @@ infrastructure_decisions_category = {
 	extra_building_slot_1 = {
 
 		icon = generic_construction
-        target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
-		}	
 
         cost = 25
         fire_only_once = no
-		state_target = yes
-
-		on_map_mode = map_only 
+		on_map_mode = map_only
+		
+		state_target = any_owned_state
+		
         available = {
 			FROM = {
 				is_owned_by = ROOT
@@ -111,15 +107,9 @@ infrastructure_decisions_category = {
 
 		icon = generic_construction
 
-        target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
-		}
-
         cost = 25
         fire_only_once = no
-		state_target = yes
+		state_target = any_owned_state
 
 		on_map_mode = map_only 
 		
@@ -179,15 +169,9 @@ infrastructure_decisions_category = {
 
 		icon = generic_construction
 
-		target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
-		}
-
         cost = 50
         fire_only_once = no
-		state_target = yes
+		state_target = any_owned_state
 
 		on_map_mode = map_only 
 		
@@ -232,29 +216,15 @@ infrastructure_decisions_category = {
 			}
 		}
 		
-		ai_will_do = {
-			base = 100
-			
-			modifier = {
-				NOT = {tag = JAP}
-				is_major = yes
-				factor = 0
-			}
-		}
     }
 	
 	extra_building_slot_4 = {
 
 		icon = generic_construction
 
-        target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
-		}
         cost = 75
         fire_only_once = no
-		state_target = yes
+		state_target = any_owned_state
 
 		on_map_mode = map_only 
 		
@@ -298,16 +268,6 @@ infrastructure_decisions_category = {
 				set_state_flag = extra_building_slot_flag_4
 			}
 		}
-		
-		ai_will_do = {
-			base = 100
-			
-			modifier = {
-				NOT = {tag = JAP}
-				is_major = yes
-				factor = 0
-			}
-		}
     }
 	
 	
@@ -318,13 +278,8 @@ steel_mills_tier_1 = {
 	
 	icon = steel
 	
-	target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
-		}
 	fire_only_once = no
-	state_target = yes
+	state_target = any_owned_state
 
 	on_map_mode = map_only 
 	cost = 50
@@ -361,15 +316,13 @@ steel_mills_tier_1 = {
 	}
 
 	ai_will_do = {
-		base = 10
+		base = 20
 			
 		modifier = {
 			NOT = {tag = JAP}
 			is_major = yes
 			factor = 0
 		}
-		
-		factor = 2
 	}
 	
 	remove_effect = { 
@@ -384,17 +337,14 @@ steel_mills_tier_1 = {
 }
 
 steel_mills_tier_2 = {
-	
 	icon = steel
 
-	
 	target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
-		}
+		is_ai = no
+	}
+
 	fire_only_once = no
-	state_target = yes
+	state_target = any_owned_state
 
 	on_map_mode = map_only 
 	cost = 75
@@ -443,5 +393,4 @@ steel_mills_tier_2 = {
 		}
 	}
 }
-
 }

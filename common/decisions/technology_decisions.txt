@@ -1,23 +1,21 @@
 technology_decisions_category = {
 	university_investment = {
 		icon = generic_research
+
 		target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
+			is_ai = no
 		}
 
 		cost = 100
 		days_remove = 120
 		fire_only_once = no
-		state_target = yes
-		highlight_color_while_active = 1 
+		state_target = any_owned_state
 		on_map_mode = map_only 
 
-		
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
+
 		visible = {
 			NOT = {has_country_flag = industry_hide_decisions}
 			NOT = {has_idea = university_10}
@@ -165,16 +163,13 @@ technology_decisions_category = {
 
 		icon = generic_research
 		target_trigger = {
-			FROM = { 
-				is_owned_by = ROOT
-			}
+			is_ai = no
 		}
 
 		cost = 150
 		days_remove = 60
 		fire_only_once = yes
-		state_target = yes
-		highlight_color_while_active = 1 
+		state_target = any_owned_state
 		on_map_mode = map_only
 		
 		modifier = {
@@ -186,7 +181,7 @@ technology_decisions_category = {
 			NOT = {has_country_flag = university_investment_2}
             FROM = {
 				has_state_flag = university_investment_1
-            	NOT = {has_country_flag = university_investment_2}
+
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT			
             }
@@ -198,8 +193,7 @@ technology_decisions_category = {
 			NOT = {has_country_flag = university_investment_2}
 			FROM = {
 				has_state_flag = university_investment_1
-				NOT = {has_country_flag = university_investment_2}
- 
+
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT			
             }

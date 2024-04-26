@@ -56,7 +56,7 @@ urban_decisions_category = {
 			}
 			
 			add_to_variable = {
-				DEV_DEC_supply_node_construction_speed = 0.08
+				DEV_DEC_supply_node_construction_speed = 0.1
 			}
 			
 			ROOT = {
@@ -147,7 +147,7 @@ urban_decisions_category = {
 			}	
 
 			add_to_variable = {
-				DEV_DEC_supply_node_construction_speed = 0.08
+				DEV_DEC_supply_node_construction_speed = 0.1
 			}
 			add_to_variable = {
 				DEV_DEC_monthly_population = 0.03
@@ -212,7 +212,7 @@ urban_decisions_category = {
 			}
 			
 			add_to_variable = {
-				DEV_DEC_supply_node_construction_speed = 0.08
+				DEV_DEC_supply_node_construction_speed = 0.1
 			}
 			add_to_variable = {
 				DEV_DEC_monthly_population = 0.03				
@@ -277,7 +277,7 @@ urban_decisions_category = {
 			}
 			
 			add_to_variable = {
-				DEV_DEC_supply_node_construction_speed = 0.08
+				DEV_DEC_supply_node_construction_speed = 0.1
 			}
 			add_to_variable = {
 				DEV_DEC_monthly_population = 0.03

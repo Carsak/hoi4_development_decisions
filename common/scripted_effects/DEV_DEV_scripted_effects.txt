@@ -1,0 +1,31 @@
+upgrade_urbanization_level = {
+	add_to_variable = {
+		DEV_DEC_supply_node_construction_speed = 0.1
+	}
+	
+	ROOT = {
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						original_tag = RAJ
+						original_tag = CHI
+						original_tag = YUN
+						original_tag = PRC
+						original_tag = GXC
+						original_tag = SIK
+						original_tag = MAN
+						original_tag = XSM
+					}
+				}
+			}
+			add_to_variable = {
+				DEV_DEC_monthly_population = 0.03
+			}
+		}
+	}
+	
+	add_dynamic_modifier = {
+		modifier = DEV_DEC_urban_dynamic_modifier
+	}
+}

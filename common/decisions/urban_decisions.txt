@@ -54,30 +54,8 @@ urban_decisions_category = {
 				set_state_flag = urban_upgrade_flag_1
 				set_state_category = large_town
 			}
-			
-			add_to_variable = {
-				DEV_DEC_supply_node_construction_speed = 0.1
-			}
-			
-			ROOT = {
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								tag = RAJ
-								tag = CHI
-							}
-						}
-					}
-					add_to_variable = {
-						DEV_DEC_monthly_population = 0.03
-					}
-				}
-			}
-			
-			add_dynamic_modifier = {
-				modifier = DEV_DEC_urban_dynamic_modifier
-			}
+
+			upgrade_urbanization_level = yes
 			
 		}
 		ai_will_do = {
@@ -146,16 +124,7 @@ urban_decisions_category = {
 				set_state_category = large_city
 			}	
 
-			add_to_variable = {
-				DEV_DEC_supply_node_construction_speed = 0.1
-			}
-			add_to_variable = {
-				DEV_DEC_monthly_population = 0.03
-			}
-				
-			add_dynamic_modifier = {
-				modifier = DEV_DEC_urban_dynamic_modifier
-			}			
+			upgrade_urbanization_level = yes			
 		}
 		
 		ai_will_do = {
@@ -211,16 +180,7 @@ urban_decisions_category = {
 				set_state_category = metropolis
 			}
 			
-			add_to_variable = {
-				DEV_DEC_supply_node_construction_speed = 0.1
-			}
-			add_to_variable = {
-				DEV_DEC_monthly_population = 0.03				
-			}
-			
-			add_dynamic_modifier = {
-				modifier = DEV_DEC_urban_dynamic_modifier
-			}
+			upgrade_urbanization_level = yes
 			
 		}
 		ai_will_do = {
@@ -276,16 +236,7 @@ urban_decisions_category = {
 				set_state_category = megalopolis
 			}
 			
-			add_to_variable = {
-				DEV_DEC_supply_node_construction_speed = 0.1
-			}
-			add_to_variable = {
-				DEV_DEC_monthly_population = 0.03
-			}
-
-			add_dynamic_modifier = {
-				modifier = DEV_DEC_urban_dynamic_modifier
-			}
+			upgrade_urbanization_level = yes
 		}
 		ai_will_do = {
 			factor = 0
